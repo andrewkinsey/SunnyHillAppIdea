@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var segmentedControllers: [UISegmentedControl]!
+    
+    var password = "test"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @IBAction func editButtonTapped(_ sender: Any)
+    {
+        let alert = UIAlertController(title: "Enter Teacher Password", message: nil, preferredStyle: .alert)
+        alert.addTextField { (passwordTextField) in
+        }
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { (action) in
+            let userEnteredPassword = alert.textFields![0] as UITextField
+            if userEnteredPassword.text == self.password
+            {
+                for i in 0...self.segmentedControllers.count
+                {
+                    print(i)
+                }
+                
+            }
+        }))
+        present(alert, animated: true, completion: nil)
     }
-
+    
 
 }
 
