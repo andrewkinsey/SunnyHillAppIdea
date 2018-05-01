@@ -28,9 +28,9 @@ class ViewController: UIViewController {
             let userEnteredPassword = alert.textFields![0] as UITextField
             if userEnteredPassword.text == self.password
             {
-                for i in 0...self.segmentedControllers.count
+                for i in 0..<self.segmentedControllers.count
                 {
-                    print(i)
+                    self.segmentedControllers[i].isEnabled = true
                 }
                 
             }
