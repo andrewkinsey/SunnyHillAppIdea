@@ -34,6 +34,18 @@ class ViewController: UIViewController {
         }
     }
     
+    func totalScores()
+    {
+            for i in 0...9
+            {
+                if scores[0+(3*i)].signum() != -1 && scores[1+(3*i)].signum() != -1 && scores[2+(3*i)].signum() != -1
+                {
+                    let totalValue = scores[0+(3*i)] + scores[1+(3*i)] + scores[2+(3*i)]
+                    //totalLabels[i].text = "/(totalValue)"
+                }
+            }
+    }
+    
     @IBAction func editButtonTapped(_ sender: Any)
     {
         if teacherModeButton.title == "Edit"
@@ -71,7 +83,7 @@ class ViewController: UIViewController {
                 commentTextFields[i].isEnabled = false
             }
             teacherModeButton.title = "Edit"
-            
+            totalScores()
         }
     }
 
