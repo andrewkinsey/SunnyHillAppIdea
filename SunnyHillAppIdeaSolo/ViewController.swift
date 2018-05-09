@@ -23,6 +23,11 @@ class ViewController: UIViewController {
             defaults.set(scores, forKey: "SCORE")
         }
     }
+    var comments = [String]() {
+        didSet {
+            defaults.set(comments, forKey: "COMMENT")
+        }
+    }
     
     override func viewDidLoad()
     {
@@ -30,7 +35,13 @@ class ViewController: UIViewController {
         if let savedData = defaults.object(forKey: "SCORE") as? [Int] {
             scores = savedData
         }
-        
+        if let savedData = defaults.object(forKey: "COMMENT") as? [String] {
+            comments = savedData
+        }
+        for i in  0..<commentTextFields.count
+        {
+            commentTextFields[i].text = comments[i]
+        }
         for i in 0..<segmentedControllers.count
         {
            segmentedControllers[i].selectedSegmentIndex = scores[i]
@@ -92,6 +103,10 @@ class ViewController: UIViewController {
             for i in 0..<commentTextFields.count
             {
                 commentTextFields[i].isEnabled = false
+                if commentTextFields[i].text != nil
+                {
+                    comments.append(commentTextFields[i].text!)
+                }
             }
             teacherModeButton.title = "Edit"
             totalScores()
@@ -108,6 +123,7 @@ class ViewController: UIViewController {
         {
             commentTextFields[i].text = ""
         }
+        totalScores()
     }
     
 
