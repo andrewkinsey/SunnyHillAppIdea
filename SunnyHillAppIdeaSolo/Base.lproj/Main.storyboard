@@ -342,7 +342,7 @@
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-F3-8GI">
-                                <rect key="frame" x="321" y="794" width="108" height="29"/>
+                                <rect key="frame" x="313" y="795" width="108" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="0"/>
@@ -351,7 +351,7 @@
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="v6y-vA-qnu">
-                                <rect key="frame" x="457" y="794" width="108" height="29"/>
+                                <rect key="frame" x="449" y="797" width="108" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="0"/>
@@ -369,7 +369,7 @@
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="ajr-X1-6Zc">
-                                <rect key="frame" x="321" y="884" width="108" height="29"/>
+                                <rect key="frame" x="313" y="887" width="108" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="0"/>
@@ -378,7 +378,7 @@
                                 </segments>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="b5Y-Pe-mMu">
-                                <rect key="frame" x="457" y="884" width="108" height="29"/>
+                                <rect key="frame" x="449" y="887" width="108" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="0"/>
@@ -470,11 +470,86 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SR-2W-qY2">
+                                <rect key="frame" x="571" y="262" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Td-eM-0WE">
+                                <rect key="frame" x="570" y="327" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGX-4a-K0l">
+                                <rect key="frame" x="570" y="383" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPX-1A-VB0">
+                                <rect key="frame" x="571" y="462" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHW-8D-tNh">
+                                <rect key="frame" x="571" y="520" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43j-x7-pZm">
+                                <rect key="frame" x="571" y="582" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMm-et-cbL">
+                                <rect key="frame" x="571" y="644" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4L-ra-uKF">
+                                <rect key="frame" x="571" y="714" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AG-Wn-vnK">
+                                <rect key="frame" x="570" y="794" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vv4-9E-e1A">
+                                <rect key="frame" x="570" y="884" width="56" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="p6h-6D-KCw">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Clear" id="sOD-8H-O7f">
+                            <connections>
+                                <action selector="clearButtonTapped:" destination="BYZ-38-t0r" id="nAF-gG-gS7"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Edit" id="elL-8b-Opi">
                             <connections>
                                 <action selector="editButtonTapped:" destination="BYZ-38-t0r" id="Xji-TO-F0e"/>
@@ -482,6 +557,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="clearButton" destination="sOD-8H-O7f" id="wET-bb-CEg"/>
                         <outlet property="teacherModeButton" destination="elL-8b-Opi" id="WzU-Yr-cjK"/>
                         <outletCollection property="segmentedControllers" destination="jfY-Ft-U1r" collectionClass="NSMutableArray" id="xbh-kD-X6g"/>
                         <outletCollection property="segmentedControllers" destination="gJ1-4C-H6T" collectionClass="NSMutableArray" id="g6l-Wu-ZKG"/>
@@ -523,6 +599,16 @@
                         <outletCollection property="commentTextFields" destination="IPN-Zg-9KE" collectionClass="NSMutableArray" id="0ZQ-X9-fYh"/>
                         <outletCollection property="commentTextFields" destination="SmM-Dp-7LV" collectionClass="NSMutableArray" id="ozL-tr-w7I"/>
                         <outletCollection property="commentTextFields" destination="PbB-em-WqS" collectionClass="NSMutableArray" id="l23-Tf-Kvk"/>
+                        <outletCollection property="scoreLabels" destination="9SR-2W-qY2" collectionClass="NSMutableArray" id="ICj-rU-Fo7"/>
+                        <outletCollection property="scoreLabels" destination="3Td-eM-0WE" collectionClass="NSMutableArray" id="KbR-po-gUJ"/>
+                        <outletCollection property="scoreLabels" destination="IGX-4a-K0l" collectionClass="NSMutableArray" id="8ph-Wj-GJu"/>
+                        <outletCollection property="scoreLabels" destination="hPX-1A-VB0" collectionClass="NSMutableArray" id="nhR-dv-uvc"/>
+                        <outletCollection property="scoreLabels" destination="ZHW-8D-tNh" collectionClass="NSMutableArray" id="G4J-um-F2K"/>
+                        <outletCollection property="scoreLabels" destination="43j-x7-pZm" collectionClass="NSMutableArray" id="Cr8-Aq-nBe"/>
+                        <outletCollection property="scoreLabels" destination="DMm-et-cbL" collectionClass="NSMutableArray" id="C6A-Yn-jXv"/>
+                        <outletCollection property="scoreLabels" destination="b4L-ra-uKF" collectionClass="NSMutableArray" id="SGI-hY-fWd"/>
+                        <outletCollection property="scoreLabels" destination="2AG-Wn-vnK" collectionClass="NSMutableArray" id="Cli-WR-F9w"/>
+                        <outletCollection property="scoreLabels" destination="vv4-9E-e1A" collectionClass="NSMutableArray" id="AY9-3y-SA5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

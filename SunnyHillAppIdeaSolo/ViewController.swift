@@ -10,9 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var scoreLabels: [UILabel]!
     @IBOutlet var commentTextFields: [UITextField]!
     @IBOutlet var segmentedControllers: [UISegmentedControl]!
     @IBOutlet weak var teacherModeButton: UIBarButtonItem!
+    @IBOutlet weak var clearButton: UIBarButtonItem!
     
     let defaults = UserDefaults.standard
     var password = "test"
@@ -28,10 +30,13 @@ class ViewController: UIViewController {
         if let savedData = defaults.object(forKey: "SCORE") as? [Int] {
             scores = savedData
         }
+        
         for i in 0..<segmentedControllers.count
         {
            segmentedControllers[i].selectedSegmentIndex = scores[i]
         }
+        
+        totalScores()
     }
     
     func totalScores()
@@ -41,7 +46,11 @@ class ViewController: UIViewController {
                 if scores[0+(3*i)].signum() != -1 && scores[1+(3*i)].signum() != -1 && scores[2+(3*i)].signum() != -1
                 {
                     let totalValue = scores[0+(3*i)] + scores[1+(3*i)] + scores[2+(3*i)]
-                    //totalLabels[i].text = "/(totalValue)"
+                    scoreLabels[i].text = "\(totalValue)"
+                }
+                else
+                {
+                    scoreLabels[i].text = ""
                 }
             }
     }
@@ -50,6 +59,7 @@ class ViewController: UIViewController {
     {
         if teacherModeButton.title == "Edit"
         {
+            clearButton.isEnabled = true
             let alert = UIAlertController(title: "Enter Teacher Password", message: nil, preferredStyle: .alert)
             alert.addTextField { (passwordTextField) in
             }
@@ -73,6 +83,7 @@ class ViewController: UIViewController {
         else if teacherModeButton.title == "Save"
         {
             scores.removeAll()
+            clearButton.isEnabled = false
             for i in 0..<segmentedControllers.count
             {
                 segmentedControllers[i].isEnabled = false
@@ -86,6 +97,19 @@ class ViewController: UIViewController {
             totalScores()
         }
     }
+    
+    @IBAction func clearButtonTapped(_ sender: Any)
+    {
+        for i in 0..<segmentedControllers.count
+        {
+            segmentedControllers[i].selectedSegmentIndex = -1
+        }
+        for i in 0..<commentTextFields.count
+        {
+            commentTextFields[i].text = ""
+        }
+    }
+    
 
 }
 
