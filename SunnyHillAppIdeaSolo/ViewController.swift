@@ -35,8 +35,19 @@ class ViewController: UIViewController {
         if let savedData = defaults.object(forKey: "SCORE") as? [Int] {
             scores = savedData
         }
+        else
+        {
+            for i in 0..<segmentedControllers.count
+            {
+                scores.append(-1)
+            }
+        }
         if let savedData = defaults.object(forKey: "COMMENT") as? [String] {
             comments = savedData
+        }
+        else
+        {
+            comments = ["","","","","","","","","",""]
         }
         for i in  0..<commentTextFields.count
         {
@@ -94,6 +105,7 @@ class ViewController: UIViewController {
         else if teacherModeButton.title == "Save"
         {
             scores.removeAll()
+            comments.removeAll()
             clearButton.isEnabled = false
             for i in 0..<segmentedControllers.count
             {
