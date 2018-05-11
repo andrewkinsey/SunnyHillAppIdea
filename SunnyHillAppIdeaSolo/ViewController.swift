@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         }
         else
         {
-            for i in 0..<segmentedControllers.count
+            for _ in 0..<segmentedControllers.count
             {
                 scores.append(-1)
             }
