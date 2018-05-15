@@ -14,6 +14,7 @@
 		C8152A892096543400B9007E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8152A872096543400B9007E /* LaunchScreen.storyboard */; };
 		C8152A942096543400B9007E /* SunnyHillAppIdeaSoloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8152A932096543400B9007E /* SunnyHillAppIdeaSoloTests.swift */; };
 		C8152A9F2096543400B9007E /* SunnyHillAppIdeaSoloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8152A9E2096543400B9007E /* SunnyHillAppIdeaSoloUITests.swift */; };
+		C841565120AB4E89005AF235 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C841565020AB4E89005AF235 /* CommentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C8152A9A2096543400B9007E /* SunnyHillAppIdeaSoloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnyHillAppIdeaSoloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8152A9E2096543400B9007E /* SunnyHillAppIdeaSoloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyHillAppIdeaSoloUITests.swift; sourceTree = "<group>"; };
 		C8152AA02096543400B9007E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C841565020AB4E89005AF235 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				C8152A7E2096542F00B9007E /* AppDelegate.swift */,
 				C8152A802096542F00B9007E /* ViewController.swift */,
+				C841565020AB4E89005AF235 /* CommentViewController.swift */,
 				C8152A822096542F00B9007E /* Main.storyboard */,
 				C8152A852096543400B9007E /* Assets.xcassets */,
 				C8152A872096543400B9007E /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				C8152A812096542F00B9007E /* ViewController.swift in Sources */,
 				C8152A7F2096542F00B9007E /* AppDelegate.swift in Sources */,
+				C841565120AB4E89005AF235 /* CommentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

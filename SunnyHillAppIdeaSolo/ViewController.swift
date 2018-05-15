@@ -81,7 +81,6 @@ class ViewController: UIViewController {
     {
         if teacherModeButton.title == "Edit"
         {
-            clearButton.isEnabled = true
             let alert = UIAlertController(title: "Enter Teacher Password", message: nil, preferredStyle: .alert)
             alert.addTextField { (passwordTextField) in
             }
@@ -89,6 +88,7 @@ class ViewController: UIViewController {
                 let userEnteredPassword = alert.textFields![0] as UITextField
                 if userEnteredPassword.text == self.password
                 {
+                    self.clearButton.isEnabled = true
                     for i in 0..<self.segmentedControllers.count
                     {
                         self.segmentedControllers[i].isEnabled = true
@@ -138,6 +138,10 @@ class ViewController: UIViewController {
         totalScores()
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        let dvc = segue.destination as? CommentViewController
+        dvc?.commentsArray = comments
+    }
 }
 
