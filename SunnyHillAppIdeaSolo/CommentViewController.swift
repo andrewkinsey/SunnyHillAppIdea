@@ -10,13 +10,21 @@ import UIKit
 
 class CommentViewController: UIViewController {
 
+    @IBOutlet var commentLabels: [UILabel]!
     var commentsArray = [String]()
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        print(commentsArray)
     }
 
+    override func viewDidAppear(_ animated: Bool)
+    {
+        for i in 0..<commentLabels.count
+        {
+            commentLabels[i].text = commentsArray[i]
+        }
+    }
     
 
     
