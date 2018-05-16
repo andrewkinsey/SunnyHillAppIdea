@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var scoreLabelsV: [UILabel]!
     @IBOutlet var scoreLabels: [UILabel]!
     @IBOutlet var commentTextFields: [UITextField]!
     @IBOutlet var segmentedControllers: [UISegmentedControl]!
@@ -63,18 +64,23 @@ class ViewController: UIViewController {
     
     func totalScores()
     {
-            for i in 0...9
+        for i in 0..<scores.count
+        {
+            if scores[i] == -1
             {
-                if scores[0+(3*i)].signum() != -1 && scores[1+(3*i)].signum() != -1 && scores[2+(3*i)].signum() != -1
-                {
-                    let totalValue = scores[0+(3*i)] + scores[1+(3*i)] + scores[2+(3*i)]
-                    scoreLabels[i].text = "\(totalValue)"
-                }
-                else
-                {
-                    scoreLabels[i].text = ""
-                }
+                scores[i] = 0
             }
+        }
+        for i in 0...9
+        {
+                let totalHorizontalValue = scores[0+(3*i)] + scores[1+(3*i)] + scores[2+(3*i)]
+                scoreLabels[i].text = "\(totalHorizontalValue)"
+        }
+        for i in 0...2
+        {
+            let totalVerticleValue = scores[0+i] + scores[3+i] + scores[6+i] + scores[9+i] + scores[12+i] + scores[15+i] + scores[18+i] + scores[21+i] + scores[24+i] + scores[27+i]
+            scoreLabelsV[i].text = "\(totalVerticleValue)"
+        }
     }
     
     @IBAction func editButtonTapped(_ sender: Any)

@@ -557,6 +557,27 @@
                                     <segue destination="aDR-7c-SFp" kind="show" id="dXF-xS-BSU"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIR-oL-DUJ">
+                                <rect key="frame" x="164" y="950" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g0-vO-mL4">
+                                <rect key="frame" x="309" y="950" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ie-yy-fRb">
+                                <rect key="frame" x="449" y="950" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -626,6 +647,9 @@
                         <outletCollection property="scoreLabels" destination="b4L-ra-uKF" collectionClass="NSMutableArray" id="SGI-hY-fWd"/>
                         <outletCollection property="scoreLabels" destination="2AG-Wn-vnK" collectionClass="NSMutableArray" id="Cli-WR-F9w"/>
                         <outletCollection property="scoreLabels" destination="vv4-9E-e1A" collectionClass="NSMutableArray" id="AY9-3y-SA5"/>
+                        <outletCollection property="scoreLabelsV" destination="gIR-oL-DUJ" collectionClass="NSMutableArray" id="tFW-cJ-uH5"/>
+                        <outletCollection property="scoreLabelsV" destination="9g0-vO-mL4" collectionClass="NSMutableArray" id="sD2-4V-IzV"/>
+                        <outletCollection property="scoreLabelsV" destination="6Ie-yy-fRb" collectionClass="NSMutableArray" id="v6w-FA-s3c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
