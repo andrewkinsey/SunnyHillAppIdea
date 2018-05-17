@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var grandTotalLabel: UILabel!
     @IBOutlet var scoreLabelsV: [UILabel]!
     @IBOutlet var scoreLabels: [UILabel]!
     @IBOutlet var commentTextFields: [UITextField]!
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     var password = "test"
+    var value = 0
     var scores = [Int]() {
         didSet {
             defaults.set(scores, forKey: "SCORE")
@@ -81,6 +83,11 @@ class ViewController: UIViewController {
             let totalVerticleValue = scores[0+i] + scores[3+i] + scores[6+i] + scores[9+i] + scores[12+i] + scores[15+i] + scores[18+i] + scores[21+i] + scores[24+i] + scores[27+i]
             scoreLabelsV[i].text = "\(totalVerticleValue)"
         }
+        for i in 0...29
+        {
+            value += scores[i]
+        }
+        grandTotalLabel.text = "Grand Total: \(value)"
     }
     
     @IBAction func editButtonTapped(_ sender: Any)

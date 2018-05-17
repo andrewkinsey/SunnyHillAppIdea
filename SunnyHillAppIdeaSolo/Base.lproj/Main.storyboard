@@ -578,6 +578,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grand Total:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o2-2R-VWU">
+                                <rect key="frame" x="548" y="931" width="102" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -596,6 +604,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="clearButton" destination="sOD-8H-O7f" id="wET-bb-CEg"/>
+                        <outlet property="grandTotalLabel" destination="4o2-2R-VWU" id="s9Q-zu-7OR"/>
                         <outlet property="teacherModeButton" destination="elL-8b-Opi" id="WzU-Yr-cjK"/>
                         <outletCollection property="segmentedControllers" destination="jfY-Ft-U1r" collectionClass="NSMutableArray" id="xbh-kD-X6g"/>
                         <outletCollection property="segmentedControllers" destination="gJ1-4C-H6T" collectionClass="NSMutableArray" id="g6l-Wu-ZKG"/>
