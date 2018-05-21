@@ -66,26 +66,27 @@ class ViewController: UIViewController {
     
     func totalScores()
     {
+        var scoresForTotals = scores
         for i in 0..<scores.count
         {
-            if scores[i] == -1
+            if scoresForTotals[i] == -1
             {
-                scores[i] = 0
+                scoresForTotals[i] = 0
             }
         }
         for i in 0...9
         {
-                let totalHorizontalValue = scores[0+(3*i)] + scores[1+(3*i)] + scores[2+(3*i)]
+                let totalHorizontalValue = scoresForTotals[0+(3*i)] + scoresForTotals[1+(3*i)] + scoresForTotals[2+(3*i)]
                 scoreLabels[i].text = "\(totalHorizontalValue)"
         }
         for i in 0...2
         {
-            let totalVerticleValue = scores[0+i] + scores[3+i] + scores[6+i] + scores[9+i] + scores[12+i] + scores[15+i] + scores[18+i] + scores[21+i] + scores[24+i] + scores[27+i]
+            let totalVerticleValue = scoresForTotals[0+i] + scoresForTotals[3+i] + scoresForTotals[6+i] + scoresForTotals[9+i] + scoresForTotals[12+i] + scoresForTotals[15+i] + scoresForTotals[18+i] + scoresForTotals[21+i] + scoresForTotals[24+i] + scoresForTotals[27+i]
             scoreLabelsV[i].text = "\(totalVerticleValue)"
         }
         for i in 0...29
         {
-            value += scores[i]
+            value += scoresForTotals[i]
         }
         grandTotalLabel.text = "Grand Total: \(value)"
     }
