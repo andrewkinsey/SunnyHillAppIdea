@@ -120,6 +120,7 @@ class ViewController: UIViewController {
         {
             scores.removeAll()
             comments.removeAll()
+            value = 0
             clearButton.isEnabled = false
             for i in 0..<segmentedControllers.count
             {
